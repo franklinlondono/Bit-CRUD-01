@@ -15,7 +15,7 @@ $ cd api
 $ npm install
 $ npm run dev
 ```
-Asegurese de no tener errores
+Asegurese de cambiar la ruta de la api con su base de datos  
 #### Paso 2
 Dentro del directorio frontend ejecutar en su navegador el archivo ```index.html```  
 Listo! pruebe las operaciones CRUD.
