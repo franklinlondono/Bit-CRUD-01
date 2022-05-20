@@ -11,7 +11,6 @@ directorio se encuentra el código fuente del proyecto.
 Para probar este proyecto debe abrir su terminal y ejecutar los siguientes comandos:
 ```
 $ cd backend
-$ cd api
 $ npm install
 $ npm run dev
 ```
