@@ -230,18 +230,7 @@ const btnAccion = e =>{
 
         
     }
-    if(e.target.classList.contains("btn-success")){
-        console.log(Orders[e.target.dataset.id])
-        
-        Orders[e.target.dataset.id]
-     
-        const producto = Orders[e.target.dataset.id]
-        producto.cantidad = Orders[e.target.dataset.id].cantidad + 1
-        Orders[e.target.dataset.id] = {...producto}
-        
-        pintarOrders()
-
-    }
+   
 
 
             e.stopPropagation()
