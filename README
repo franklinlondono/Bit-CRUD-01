@@ -11,11 +11,10 @@ directorio se encuentra el código fuente del proyecto.
 Para probar este proyecto debe abrir su terminal y ejecutar los siguientes comandos:
 ```
 $ cd backend
-$ cd api
 $ npm install
 $ npm run dev
 ```
-Asegurese de cambiar la ruta de la api con su base de datos  
+si desea probar este proyecto utilice el archivo "products.json" y exportela asu base de datos mongodb y cambie las rutas paraconexion a la base de datos 
 #### Paso 2
 Dentro del directorio frontend ejecutar en su navegador el archivo ```index.html```  
 Listo! pruebe las operaciones CRUD.
