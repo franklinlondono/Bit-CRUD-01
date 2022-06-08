@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {ResgistrarseService} from "../../services/resgistrarse.service"
 import { Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-registrarse',
   templateUrl: './registrarse.component.html',
@@ -12,7 +13,8 @@ export class RegistrarseComponent implements OnInit {
 
   constructor(
     private registrarseService: ResgistrarseService,
-    private router: Router
+    private router: Router,
+    
   ) { }
   user = {
     name: '',
