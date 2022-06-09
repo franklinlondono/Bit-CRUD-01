@@ -32,6 +32,13 @@ login() {
           });
           localStorage.setItem('token', res.success);
           this.router.navigate(['/listar-productos']);
+        }else{
+          Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            text: '!Correo / Contraseña Invalida¡',
+            footer: 'Verifique'
+          })
         }
       },
       (err) =>{
