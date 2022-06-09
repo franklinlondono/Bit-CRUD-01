@@ -44,7 +44,7 @@ $ npm run dev
 
 Asegurese de no tener ningún error en cada una de las tres terminales.
 
-3. Abra un navegador web e ingrese a: ``http://localhost:4200``
+3. Abra un navegador web e ingrese a: ``http://localhost:4200/``
 
 Navegue por el sitio
 
