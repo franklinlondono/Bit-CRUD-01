@@ -38,7 +38,7 @@ import { ListarProductosComponent } from './components/listar-productos/listar-p
       { path: 'Private', component: ListarProductosComponent },
       { path: 'Registrarse', component: RegistrarseComponent },
       { path: 'IniciarSesion', component: IniciarSesionComponent },
-      { path: '', redirectTo: '/home', pathMatch: 'full' },
+      { path: '', redirectTo: '/Registrarse', pathMatch: 'full' },
       { path: '**', component: PageNotFoundComponent },
   ]),
   FormsModule,
