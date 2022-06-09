@@ -20,7 +20,6 @@ Para ejecutar este proyecto en su local asegurese de:
 ###### Terminal 1
 ```
 $ cd frontend
-$ cd Angular
 $ cd app-productos
 $ npm install
 $ ng serve
