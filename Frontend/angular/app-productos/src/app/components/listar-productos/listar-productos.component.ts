@@ -28,17 +28,28 @@ obtenerProductos(){
 }
 
 eliminarProducto(_id: any){
-  this._productoService.eliminarProducto(_id).subscribe(data =>{
-    {
-      Swal.fire({
-        position: 'center',
-        icon: 'success',
-        title: '¡Producto Eliminado Con Exito!',
-        showConfirmButton: false,
-        timer: 3000,
-      });
+  {
+    Swal.fire({
+      title: 'Are you sure?',
+      text: "You won't be able to revert this!",
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Yes, delete it!'
+    }).then((_id) => {
+      if (_id.isConfirmed) {
+        Swal.fire(
+          'Deleted!',
+          'Your file has been deleted.',
+          'success'
+        )
+      }
+    })
 
-    } 
+  } 
+  this._productoService.eliminarProducto(_id).subscribe(data =>{
+    
  this.toastr.error('El Producto Fue Eliminado','¡Producto Eliminado!');
  this.obtenerProductos();
   }, error =>{
