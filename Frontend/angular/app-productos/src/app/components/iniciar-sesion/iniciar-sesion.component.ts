@@ -36,8 +36,8 @@ login() {
           Swal.fire({
             icon: 'error',
             title: 'Oops...',
-            text: '!Correo / Contraseña Invalida¡',
-            footer: 'Verifique'
+            text: '!Usuario / Contraseña Invalida¡',
+            footer: 'Verifique Nuevamente'
           })
         }
       },
