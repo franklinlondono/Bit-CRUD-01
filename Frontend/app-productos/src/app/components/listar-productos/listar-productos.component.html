@@ -5,7 +5,7 @@
                <div class="card-body text-center">
                    <span class="titulo"> PRODUCTOS</span>
                    
-                   <table *ngIf="listProductos.length > 0" class="table table-hover mt-5">
+                   <table *ngIf="listProductos.length >= 0" class="table table-hover mt-5">
                     <thead>
                       <tr >
                         <th scope="col">Producto</th>
@@ -28,7 +28,7 @@
                         </td>
                       </tr>
                    
-                     <h5 style="text-align: center; margin-top: 10px;" *ngIf="listProductos.length == 0">No Hay Producto</h5>
+                     <h5 style="text-align: center center; margin-top: 70px;" *ngIf="listProductos.length == 0">No Hay Productos Disponibles</h5>
                     </tbody>
                   </table>
                   <button class="btn btn-success float-end" routerLink="/crear-producto">Nuevo Producto</button>
