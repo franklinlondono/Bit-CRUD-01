@@ -1,4 +1,4 @@
-# Proyecto Final App Productos
+# Proyecto final 
 
 ## Descripción
 
@@ -21,7 +21,7 @@ Para ejecutar este proyecto en su local asegurese de:
 ```
 $ cd frontend
 $ cd Angular
-$ cd app-productos
+$ de app-productos
 $ npm install
 $ ng serve
 ```
@@ -44,7 +44,7 @@ $ npm run dev
 
 Asegurese de no tener ningún error en cada una de las tres terminales.
 
-3. Abra un navegador web e ingrese a: ``http://localhost:4200/``
+3. Abra un navegador web e ingrese a: ``http://localhost:4200``
 
 Navegue por el sitio
 
