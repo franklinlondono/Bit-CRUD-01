@@ -1,4 +1,4 @@
-# Proyecto final 
+# Proyecto Final App Productos
 
 ## Descripción
 
@@ -21,7 +21,7 @@ Para ejecutar este proyecto en su local asegurese de:
 ```
 $ cd frontend
 $ cd Angular
-$ de app-productos
+$ cd app-productos
 $ npm install
 $ ng serve
 ```
@@ -29,8 +29,8 @@ $ ng serve
 ###### Terminal 2
 ```
 $ cd Backend
-$ npm install
 $ cd productosBackend
+$ npm install
 $ npm run dev
 ```
 
