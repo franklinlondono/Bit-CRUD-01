@@ -9,7 +9,7 @@ import Swal from 'sweetalert2';
   styleUrls: ['./iniciar-sesion.component.css']
 })
 export class IniciarSesionComponent implements OnInit {
-
+  fieldTextType!: boolean;
   constructor(private IniciarSesionService: IniciarSesionService, private router: Router) { }
   user = {
     username: '',
@@ -56,4 +56,9 @@ login() {
       
     );
   }
+  toggleFieldTextType() {
+    this.fieldTextType = !this.fieldTextType;
+  }
+
+
 }
