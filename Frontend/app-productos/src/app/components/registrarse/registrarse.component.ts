@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import {ResgistrarseService} from "../../services/resgistrarse.service"
 import { Router } from '@angular/router';
 import Swal from 'sweetalert2';
+import { FormBuilder, FormGroup } from '@angular/forms';
+
 
 @Component({
   selector: 'app-registrarse',
@@ -10,11 +12,12 @@ import Swal from 'sweetalert2';
 })
 export class RegistrarseComponent implements OnInit {
   
+  fieldTextType!: boolean;
 
   constructor(
     private registrarseService: ResgistrarseService,
     private router: Router,
-    
+    private fb: FormBuilder,
   ) { }
   user = {
     name: '',
@@ -22,6 +25,7 @@ export class RegistrarseComponent implements OnInit {
     password: '',
   };
   ngOnInit(): void {
+
   }
   register() {
     //console.log('user:', this.user);
@@ -43,5 +47,14 @@ export class RegistrarseComponent implements OnInit {
       }
     );
   }
+
+  toggleFieldTextType() {
+    this.fieldTextType = !this.fieldTextType;
+  }
+
+
+
+
 }
+
 
