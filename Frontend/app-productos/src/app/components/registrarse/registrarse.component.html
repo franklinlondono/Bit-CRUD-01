@@ -29,9 +29,9 @@
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Contraseña</label>
-          <input [type]="fieldTextType ? 'text' : 'password'" class="form-control" id="password" name="password" [(ngModel)]="user.password"
+          <input class="input-group-text" [type]="fieldTextType ? 'text' : 'password'" class="form-control" id="password" name="password" [(ngModel)]="user.password"
             />
-            <span class="input-group-text">
+            
               <i
                 class="fa"
                 [ngClass]="{
@@ -40,7 +40,7 @@
                 }"
                 (click)="toggleFieldTextType()"
               ></i>
-            </span>
+         
         
         </div>
         <button type="submit" class="btn btn-primary">Guardar</button>
